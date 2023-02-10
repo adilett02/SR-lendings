@@ -1,0 +1,97 @@
+.testimonials {
+    padding: 100px 0;
+    h2 {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    .testimony {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        padding: 30px;
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 0 auto 30px auto;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .sub-title {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 70px;
+    color: $primaryColor;
+    .owl-next,
+    .owl-prev {
+        transform: translateY(-50%);
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+    }
+    .owl-prev {
+        left: -20px;
+    }
+    .owl-next {
+        right: -20px;
+    }
+    // .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    //     font-size: 70px;
+    // }
+}
+.owl-dots {
+    text-align: center;
+    .owl-dot {
+        display: inline-block;
+        margin: 5px;
+        span {
+            line-height: 0;
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: none;
+            float: left;
+            background: #cccccc;
+            -webkit-transition: 0.3s all ease;
+            -o-transition: 0.3s all ease;
+            transition: 0.3s all ease;
+        }
+    }
+    .owl-dot.active span {
+        background-color: $primaryColor;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        padding: 80px 0;
+        .testimony {
+            padding: 0;
+            p {
+                font-size: 16px;
+            }
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+    .owl-nav {
+        display: none;
+    }
+}

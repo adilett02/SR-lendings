@@ -1,0 +1,156 @@
+@import "utils/fonts";
+@import "utils/vars";
+@import "utils/libs";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+body {
+  font-family: $font2;
+  font-family: $font1;
+  font-size: 18px;
+}
+.row {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+// input,
+button {
+  border: none !important;
+  outline: none !important;
+}
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font2;
+  padding: 15px 30px;
+  background-color: $primaryColor;
+  color: $white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    background-color: $white;
+    color: $secondaryColor;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
+
+.heading-wrapper {
+  padding: 70px 0;
+  position: relative;
+}
+.heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 36px;
+  z-index: 2;
+  color: $secondaryColor;
+}
+.sub-heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $primaryColor;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  z-index: 2;
+}
+.hidden-text {
+  position: absolute;
+  font-size: 150px;
+  opacity: 0.03;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.arrow {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  transform: rotate(90deg);
+  background: $primaryColor;
+  padding: 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  svg {
+    width: 100%;
+    fill: $secondaryColor;
+  }
+}
+
+.slogan {
+  font-family: $font1;
+  font-size: 20px;
+}
+h4.about-heading {
+  font-size: 36px;
+  color: $primaryColor;
+  // white-space: nowrap;
+  margin-bottom: 20px;
+}
+.about-text {
+  font-family: $font2;
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+.secondary-text {
+  color: $secondaryColor !important;
+}
+.white-text {
+  color: $white !important;
+}
+.primary-text {
+  color: $primaryColor !important;
+}
+
+.black-bg {
+  background-color: $secondaryColor !important;
+}
+.white-bg {
+  background-color: $white !important;
+}
+.green-bg {
+  background-color: $primaryColor !important;
+}
+
+@import "blocks/navbar.scss";
+
+@import "blocks/hero.scss";
+
+@import "blocks/about-product.scss";
+
+@import "blocks/testimonials.scss";
+
+@import "blocks/about-us.scss";
+
+@import "blocks/form.scss";
+
+@import "blocks/footer.scss";
+
+@import "utils/media.scss";

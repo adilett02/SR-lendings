@@ -1,0 +1,116 @@
+.about-product {
+    padding-top: 100px;
+    h2 {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 36px;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+    h5 {
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+.recommendation-section {
+    h4 {
+        font-size: 34px;
+    }
+    h5 {
+        font-size: 24px;
+        font-style: italic;
+        color: #914420;
+    }
+}
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: $primaryColor;
+    background-position: center;
+    padding-top: 120px;
+    h4 {
+        color: #fff;
+    }
+    .buy-text {
+        margin: 30px 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        color: $secondaryColor;
+        span {
+            color: #914420;
+            font-weight: bold;
+        }
+    }
+    .order-btn {
+        background: #fff;
+        color: $primaryColor;
+        &:hover {
+            border: 1px solid #fff;
+            background: transparent;
+            color: #fff;
+        }
+    }
+}
+
+.banner {
+    padding: 50px 0;
+    background-color: $primaryColor;
+    text-align: center;
+    color: #fff;
+    p {
+        padding: 0 100px;
+    }
+}
+.arabica-block {
+    position: relative;
+    background-image: url(../img/arabica-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;
+    color: #fff;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.3;
+    }
+}
+.usefull__item {
+    margin: 20px;
+}
+
+@media (max-width: 991px) {
+    .buy-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    .about-product {
+        padding-top: 80px;
+        h2 {
+            font-size: 36px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+    }
+    .banner p {
+        padding: 0;
+    }
+    .story-text {
+        margin: 15px;
+    }
+    .arabica-block {
+        padding: 100px 0;
+    }
+}

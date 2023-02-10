@@ -1,0 +1,37 @@
+//about-us
+.about-us {
+  padding-top: 100px;
+  img {
+    width: 100%;
+  }
+}
+
+.problem__decision-section {
+  background: linear-gradient(to right, #414141 50%, $primaryColor 50%);
+  .mobile__dark,
+  .mobile__green {
+    padding: 50px 30px;
+    color: #fff;
+    //   font-family: $font2;
+    svg {
+      width: 80px;
+      fill: #fff;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media(max-width: 768px) {
+  .problem__decision-section {
+    background: linear-gradient(to bottom, #414141 50%, $primaryColor 50%);
+  }
+}
+
+.advice__text {
+  padding: 60px;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -1,0 +1,47 @@
+@import "utils/libs.scss";
+@import "utils/vars.scss";
+@import "utils/fonts.scss";
+body {
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    background: #f6f6fc;
+}
+.wrapper {
+    background: #fff;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+li {
+    list-style: none;
+}
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .wrapper {
+        margin: 10px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@import "../scss/blocks/header.scss";
+@import "../scss/blocks/hero.scss";
+@import "../scss/blocks/about-product.scss";
+@import "../scss/blocks/testimonials.scss";
+@import "../scss/blocks/about-us.scss";
+@import "../scss/blocks/form.scss";
+@import "../scss/blocks/footer.scss";
+@import "../scss/utils/media.scss";

@@ -1,0 +1,49 @@
+.hero {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	color: $primaryColor;
+	background-image: url(../img/header-img2.png);
+	background-size: cover;
+	background-position: bottom;
+
+	h1 {
+		font-size: 120px;
+		color: $primaryColor;
+		font-family: "Pacifico", cursive;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	h3 {
+		font-family: "Pacifico", cursive;
+	}
+	.order-btn {
+		font-family: "Pacifico", cursive;
+		font-size: 28px;
+		font-weight: 400;
+		text-decoration: underline;
+		&:hover {
+			font-weight: 400;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.hero {
+		height: auto;
+		padding: 150px 0;
+		.order-btn {
+			font-size: 20px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 40px;
+			margin-bottom: 40px;
+			margin-top: 20px;
+			font-size: 46px;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+//about-us
+.about-us {
+    padding-top: 30px;
+    h2 {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    h4 {
+        color: $primaryColor;
+        font-size: 34px;
+        font-weight: bold;
+    }
+    img {
+        width: 100%;
+    }
+}
+.juncao__start {
+    background-color: $primaryColor;
+    &-text {
+        padding: 80px 30px;
+        text-align: center;
+        color: #fff;
+    }
+}
+.juncao__end {
+    padding-bottom: 25px;
+}
+
+.problem__decision-section {
+    background: linear-gradient(to right, $secondaryColor 50%, $primaryColor 50%);
+    .mobile__dark,
+    .mobile__green {
+        padding: 50px 30px;
+        svg {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
+    .mobile__dark {
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+    .mobile__green {
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+}
+
+.advice__text {
+    padding: 60px;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 700;
+}
+@media (max-width: 767px) {
+    .problem__decision-section {
+        background: linear-gradient(to bottom, $secondaryColor 50%, $primaryColor 50%);
+    }
+}
+
+@media (max-width: 575px) {
+    .about-us h4 {
+        font-size: 28px;
+    }
+    .advice__text {
+        padding: 60px 0;
+    }
+    .problem__decision-section {
+        padding-top: 30px;
+    }
+}

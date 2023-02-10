@@ -1,0 +1,47 @@
+//footer
+.footer {
+    padding: 40px 0;
+    color: #000;
+    .conditions-text {
+        color: $secondaryColor;
+        text-decoration: underline;
+    }
+}
+.social__list {
+    display: flex;
+    justify-content: flex-end;
+    &-item {
+        margin-left: 10px;
+        a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            padding: 13px;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                transition: all 0.3s ease 0s;
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.foot {
+    padding-top: 20px;
+    border-top: 1px solid #eee !important;
+}
+.positive-text {
+    color: $tertiaryColor;
+}
+.negative-text {
+    color: #c51603;
+}
+@media (max-width: 576px) {
+    .social__list {
+        justify-content: center;
+    }
+}

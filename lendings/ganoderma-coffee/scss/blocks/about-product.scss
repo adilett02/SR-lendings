@@ -1,0 +1,222 @@
+//about-product
+.about-product {
+  background-color: #f5f8f2;
+
+  img {
+    width: 100%;
+  }
+}
+.second-block {
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+}
+.more__link {
+  color: $primaryColor;
+  text-decoration: underline;
+  float: right;
+  margin-top: 20px;
+  background-color: transparent;
+  &:hover {
+    color: $primaryColor;
+  }
+}
+.hidden-block {
+  display: none;
+}
+
+.book {
+  background-image: url(../img/book-bg.jpg);
+  padding: 50px 0 70px 0;
+}
+.buy-section {
+  background-image: url(../img/buy-bg.png);
+  background-color: $secondaryColor;
+  background-position: center;
+  padding-top: 120px;
+  .order-btn {
+    margin: 40px auto auto 20px;
+    background-color: $primaryColor;
+    .arrow {
+      background-color: $secondaryColor;
+      svg {
+        fill: $white;
+      }
+    }
+    &:hover {
+      background-color: $white;
+      color: $secondaryColor;
+    }
+  }
+}
+.sixth-block {
+  position: relative;
+  background-image: url(../img/arabica-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 300px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.3;
+  }
+}
+.arabica-container {
+  position: relative;
+  p {
+    color: $white;
+    position: relative;
+  }
+}
+.seventh-block {
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.useful__list {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: $secondaryColor;
+  }
+  .useful__item {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin: 20px 0;
+    &-text {
+      padding: 30px;
+      background-color: $primaryColor;
+      color: $white;
+      border-radius: 10px;
+      font-family: $font2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 10%;
+      right: 11px;
+      z-index: 1;
+      border: 10px solid;
+      border-color: transparent transparent transparent $primaryColor;
+    }
+    &.right {
+      position: relative;
+    }
+    &.right::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 10%;
+      z-index: 1;
+      border: 10px solid;
+      left: 11px;
+      right: auto;
+      border-color: transparent $primaryColor transparent transparent;
+    }
+  }
+  .useful__item.left {
+    margin-right: auto;
+    padding-right: 30px;
+  }
+  .useful__item.right {
+    margin-left: auto;
+    padding-left: 30px;
+  }
+}
+
+.buy-text {
+  font-size: 24px;
+  font-style: italic;
+  color: $white;
+}
+
+.video-section {
+  position: relative;
+  background-image: url(../img/video-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0 0 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .videoWrapper .tea-video {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 4px 7px 10px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 7px 10px 2px rgba(0, 0, 0, 0.7);
+    border: none;
+  }
+  .video-heading {
+    font-size: 60px;
+    color: $secondaryColor;
+    text-align: center;
+    margin-bottom: 40px;
+    span {
+      color: $white;
+    }
+  }
+}
+
+.buy-section2 {
+  background-color: $white;
+  padding: 170px 0 120px;
+  .order-btn {
+    margin: 30px auto;
+    background-color: $secondaryColor;
+    &:hover {
+      background-color: $primaryColor;
+      color: $white;
+    }
+  }
+  .questions-btn {
+    display: inline-flex;
+
+    background-color: $primaryColor;
+    &:hover {
+      background-color: $secondaryColor;
+      color: $white;
+      font-weight: normal;
+      .arrow {
+        background-color: $secondaryColor;
+      }
+    }
+  }
+}
+.buy-section2 .about-heading {
+  font-family: $font2;
+  font-weight: bold;
+  span {
+    text-shadow: #eac6b3 1px -1px 0, #eac6b3 2px -2px 0, #eac6b3 3px -3px 0, #eac6b3 4px -4px 0, #eac6b3 5px -5px 0;
+  }
+}

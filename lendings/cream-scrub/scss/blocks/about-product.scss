@@ -1,0 +1,131 @@
+.about-product {
+    padding-top: 100px;
+    h4 {
+        font-size: 36px;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+    h5 {
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+h2 {
+    text-align: center;
+    color: $secondaryColor;
+    font-size: 36px;
+    font-weight: bold;
+}
+.about-text {
+    color: #000;
+    span {
+        color: $secondaryColor;
+        font-weight: bold;
+    }
+}
+.contraindications {
+    color: #ff1800;
+    padding: 5% 5% 10%;
+    text-align: center;
+}
+
+.recommendation-section {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../img/shape.png);
+        width: 100%;
+        height: 132px;
+        position: absolute;
+        left: 0;
+        top: -110px;
+        transform: rotate(180deg);
+    }
+    &::after {
+        content: "";
+        background-image: url(../img/shape.png);
+        width: 100%;
+        height: 132px;
+        position: absolute;
+        left: 0;
+        bottom: -132px;
+        // transform: rotate(180deg);
+    }
+    h5 {
+        font-size: 24px;
+        font-style: italic;
+        color: $secondaryColor;
+    }
+}
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: $primaryColor;
+    background-position: center;
+    padding-top: 120px;
+    h4 {
+        color: $secondaryColor;
+        margin-bottom: 20px;
+    }
+    .order-btn {
+        background: $secondaryColor;
+        color: #fff;
+        &:hover {
+            background: #fff;
+            color: $secondaryColor;
+        }
+    }
+    .buy-text {
+        color: #fff;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+    }
+}
+
+.structure {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    img {
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+.usefull__item {
+    margin: 20px;
+}
+.banner {
+    padding: 50px 0;
+    background-color: $primaryColor;
+    text-align: center;
+    color: #fff;
+    p {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .buy-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    .arabica-block {
+        padding: 100px 0;
+    }
+    .about-product {
+        padding-top: 80px;
+        h2 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+    }
+    .banner p {
+        padding: 0;
+    }
+}

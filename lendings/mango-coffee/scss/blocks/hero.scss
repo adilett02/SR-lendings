@@ -1,0 +1,76 @@
+.hero {
+	background: url(../img/header-bg.jpg) center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	.container {
+		padding-bottom: 250px;
+	}
+}
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+.order-btn {
+	display: inline-flex;
+	color: #fff;
+	background: $primaryColor;
+	border: 1px solid transparent;
+	outline: none;
+	line-height: 40px;
+	padding: 0 30px;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	white-space: nowrap;
+	span {
+		margin-left: 10px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+		}
+	}
+	&:hover {
+		background: transparent;
+		color: $secondaryColor;
+		border: 1px solid $secondaryColor;
+		svg {
+			fill: $primaryColor;
+		}
+	}
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+@media (max-width: 767px) {
+	.hero {
+		background-position: inherit;
+		padding: 160px 0;
+		height: auto;
+	}
+}
+@media (max-width: 575px) {
+	h1 {
+		font-size: 50px;
+	}
+	.hero .container {
+		padding-bottom: 100px;
+	}
+}
+@media (max-width: 390px) {
+	h1 {
+		font-size: 40px;
+	}
+}

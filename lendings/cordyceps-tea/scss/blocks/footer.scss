@@ -1,0 +1,50 @@
+//footer
+.footer {
+  padding: 40px 0;
+  background-color: #fff;
+  color: $primaryColor;
+  font-weight: bold;
+}
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  &-item {
+    margin-left: 10px;
+    a {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      background-color: $primaryColor;
+      padding: 12px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: #fff;
+        transition: all 0.3s ease 0s;
+        svg {
+          fill: $primaryColor;
+        }
+      }
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #fff;
+    }
+  }
+}
+.conditions-text {
+  text-decoration: underline;
+}
+.positive-text {
+  color: #414141;
+}
+.negative-text {
+  color: #e03e2d;
+}
+
+@media (max-width: 576px) {
+  .social__list {
+    justify-content: center;
+  }
+}

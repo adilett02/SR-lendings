@@ -1,0 +1,88 @@
+// /*******************************/
+// /********* Contact CSS *********/
+// /*******************************/
+.contact {
+    margin-top: 100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    background: $primaryColor;
+    h2 {
+        color: #fff;
+    }
+}
+
+.contact .contact-form {
+    position: relative;
+    padding: 90px 0 90px 45px;
+    background: $primaryColor;
+}
+
+.contact .contact-form input {
+    color: #ffffff;
+    padding: 25px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+}
+
+.contact .contact-form textarea {
+    color: #ffffff;
+    height: 120px;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+    resize: none;
+}
+
+.contact .contact-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact .contact-form .form-control:-ms-input-placeholder,
+.contact .contact-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.contact .contact-form .btn {
+    margin-top: 35px;
+    color: $primaryColor;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.contact .contact-form .btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.contact .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .contact .container-fluid {
+        background: none;
+    }
+
+    .contact .contact-form {
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact h2 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,70 @@
+.form {
+    padding: 100px 0;
+    h2 {
+        text-align: center;
+        color: $secondaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    h5 {
+        color: $secondaryColor;
+        font-family: "Pacifico", cursive;
+        font-size: 34px;
+    }
+    form {
+        margin-top: 50px;
+    }
+    .order-btn {
+        background-color: $secondaryColor;
+        text-decoration: none;
+        border: 1px solid $secondaryColor;
+        svg {
+            fill: $primaryColor;
+        }
+        &:hover {
+            border: 1px solid $secondaryColor;
+            background: transparent;
+            color: $secondaryColor;
+            svg {
+                fill: $secondaryColor;
+            }
+        }
+    }
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+    .form-control {
+        border: 1px solid $secondaryColor;
+        padding: 10px 20px;
+        color: #000;
+        border-radius: 0;
+        height: auto;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $secondaryColor;
+        }
+    }
+    .focus-border {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        transform: translateX(-50%);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        h2 {
+            letter-spacing: -1px;
+        }
+        h5 {
+            font-size: 24px;
+        }
+    }
+}

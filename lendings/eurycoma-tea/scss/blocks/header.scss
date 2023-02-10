@@ -1,0 +1,116 @@
+header {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+.logo {
+    width: 70px;
+    svg {
+        width: 100%;
+        fill: $primaryColor;
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav.hide-menu {
+    transform: scale(0);
+}
+nav {
+    transition: all 0.3s;
+    transform-origin: 100% 50%;
+    a {
+        padding: 0 30px;
+        color: $primaryColor;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}
+.menu-bar {
+    margin-left: 70px;
+    position: relative;
+    width: 28px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 99;
+    float: right;
+    transition: all 3.3s;
+    &::before,
+    &::after {
+        content: "";
+        transition: all 0.3s;
+    }
+    span,
+    &::before,
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: block;
+        background: $primaryColor;
+        border-radius: 2px;
+        position: absolute;
+        opacity: 1;
+    }
+    &::before {
+        top: 4px;
+    }
+    &::after {
+        top: 22px;
+    }
+    span {
+        top: 13px;
+    }
+    //hover
+    &:hover::before {
+        top: 5px;
+    }
+    &:hover::after {
+        top: 21px;
+    }
+
+    //focus
+    &.active::before {
+        transform: rotate(45deg);
+        top: 40%;
+    }
+    &.active::after {
+        transform: rotate(-45deg);
+        top: 40%;
+    }
+    &.active span {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        position: relative;
+    }
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+        right: 0;
+        background: $primaryColor;
+        z-index: 9;
+        a {
+            color: #fff;
+            text-align: right;
+            padding: 15px 25px;
+            white-space: nowrap;
+            &:focus,
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .logo {
+        width: 60px;
+    }
+}

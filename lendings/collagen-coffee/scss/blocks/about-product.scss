@@ -1,0 +1,239 @@
+.about-product {
+    padding-top: 100px;
+    h2 {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    .composition {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+    }
+    h4 {
+        font-size: 36px;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+.arabica-block {
+    position: relative;
+    background-image: url(../img/arabica-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.3;
+    }
+}
+.arabica-container {
+    position: relative;
+    p {
+        color: white;
+        position: relative;
+    }
+}
+.blue-bg {
+    background-color: $primaryColor;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.useful-item {
+    padding: 40px;
+    border-left: 1px solid #d9e8f4;
+    border-bottom: 1px solid #d9e8f4;
+    margin: -1px;
+    span {
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        color: $primaryColor;
+    }
+    p {
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.main-features {
+    padding: 100px 0;
+    .feature-icon {
+        width: 45px;
+        margin: 10px;
+    }
+    .one-feature {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+}
+.main-features .left-side .one-feature:nth-child(1),
+.main-features .left-side .one-feature:nth-child(3) {
+    position: relative;
+    left: 50px;
+}
+.main-features .one-feature {
+    margin-bottom: 5em;
+}
+.main-features .left-side .one-feature:nth-child(3),
+.main-features .right-side .one-feature:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.main-features .right-side .one-feature:nth-child(1),
+.main-features .right-side .one-feature:nth-child(3) {
+    position: relative;
+    right: 50px;
+}
+
+.circle-svg svg {
+    width: 470px;
+    height: 470px;
+}
+
+.section-title p {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.main-features .features-circle {
+    position: relative;
+}
+.features-circle .circle-svg {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.features-circle svg g {
+    transform-origin: 50%;
+}
+.features-circle svg circle {
+    stroke: $primaryColor;
+}
+
+.recommendation-section {
+    h5 {
+        font-size: 24px;
+        font-style: italic;
+    }
+}
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: $primaryColor;
+    background-position: center;
+    padding-top: 120px;
+    h4 {
+        color: #fff;
+    }
+    .buy-text {
+        margin: 30px 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        span {
+            color: #fff;
+        }
+    }
+    .order-btn {
+        border: none;
+        background-color: #fff;
+        color: $primaryColor;
+        &:hover {
+            box-shadow: 0px 0px 10px 0px #fff;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .circle-svg svg {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 991px) {
+    .main-features .one-feature {
+        margin-bottom: 2rem;
+    }
+    .main-features .left-side .one-feature:nth-child(1),
+    .main-features .left-side .one-feature:nth-child(3) {
+        left: auto;
+    }
+    .main-features .right-side .one-feature:nth-child(1),
+    .main-features .right-side .one-feature:nth-child(3) {
+        right: auto;
+    }
+    .features-circle .circle-svg {
+        top: 40px;
+    }
+    .circle-svg svg {
+        width: 500px;
+        height: 500px;
+    }
+    .buy-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .circle-svg svg {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 576px) {
+    .arabica-block {
+        padding: 100px 0;
+    }
+    .main-features {
+        padding: 50px 0;
+    }
+    .main-features .one-feature {
+        margin-bottom: 1rem;
+    }
+    .useful-item {
+        padding: 30px;
+    }
+    .about-product {
+        padding-top: 50px;
+        h2 {
+            font-size: 36px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+    }
+    .features-circle .circle-svg {
+        top: 0px;
+    }
+    .circle-svg svg {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width: 400px) {
+    .features-circle .circle-svg {
+        top: 30px;
+    }
+    .circle-svg svg {
+        width: 270px;
+        height: 270px;
+    }
+}

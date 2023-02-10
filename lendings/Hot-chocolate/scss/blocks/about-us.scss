@@ -1,0 +1,75 @@
+//about-us
+.about-us {
+    padding-top: 30px;
+    h2 {
+        text-align: center;
+        color: $secondaryColor;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    h4 {
+        color: $secondaryColor;
+        font-family: "Pacifico", cursive;
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.problem__decision-section {
+    background: linear-gradient(to right, $secondaryColor 50%, $primaryColor 50%);
+    .mobile__dark,
+    .mobile__green {
+        padding: 50px 30px;
+        svg {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
+    .mobile__dark {
+        color: $primaryColor;
+        svg {
+            fill: $primaryColor;
+        }
+    }
+    .mobile__green {
+        color: $secondaryColor;
+        svg {
+            fill: $secondaryColor;
+        }
+    }
+}
+.banner {
+    background-color: $secondaryColor;
+}
+.advice__text {
+    margin-top: 50px;
+    padding: 60px;
+    font-family: "Pacifico", cursive;
+    color: $primaryColor;
+    font-size: 34px;
+}
+
+@media (max-width: 767px) {
+    .problem__decision-section {
+        background: linear-gradient(to bottom, $secondaryColor 50%, $primaryColor 50%);
+    }
+}
+
+@media (max-width: 575px) {
+    .about-us h4 {
+        font-size: 28px;
+    }
+    .advice__text {
+        padding: 60px 0;
+        font-size: 24px;
+    }
+    .problem__decision-section {
+        padding-top: 30px;
+    }
+}

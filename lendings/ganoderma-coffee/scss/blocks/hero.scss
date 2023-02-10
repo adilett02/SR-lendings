@@ -1,0 +1,143 @@
+//hero-section
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  height: calc(var(--vh, 1vh) * 100);
+  .order-btn {
+    font-weight: bold;
+  }
+}
+.header-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  .carousel-inner {
+    height: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: black;
+      opacity: 0.4;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+  .carousel-item {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel-item1 {
+    background-image: url(../img/header-slider1.jpg);
+  }
+  .carousel-item2 {
+    background-image: url(../img/header-slider2.jpg);
+  }
+  .carousel-item3 {
+    background-image: url(../img/header-slider3.jpg);
+  }
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.3, 1.3);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.3, 1.3);
+  }
+}
+.header-slider .carousel-item {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+.suptitle {
+  color: $secondaryColor;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+h1 {
+  font-size: 72px;
+  font-style: italic;
+  font-weight: bolder;
+  color: $primaryColor;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.subtitle {
+  width: 100%;
+  color: $white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  padding: 0 30px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.follow-us {
+  position: absolute;
+  left: 60px;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .follow-text {
+    font-family: $font2;
+    position: relative;
+    transform: rotate(270deg) translateX(-50%) translateY(-50%);
+    color: $white;
+    font-size: 14px;
+    display: block;
+    white-space: nowrap;
+    margin-right: -20px;
+    margin-top: 30px;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      width: 30px;
+      height: 1px;
+      background-color: $secondaryColor;
+    }
+  }
+  .social-icons__item {
+    width: 18px;
+    margin-bottom: 10px;
+    a {
+      display: block;
+    }
+    &:hover {
+      svg {
+        fill: $secondaryColor;
+      }
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $white;
+    }
+  }
+}

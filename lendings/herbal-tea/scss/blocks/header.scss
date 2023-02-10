@@ -1,0 +1,125 @@
+.nav-sticky.navbar {
+    background: #fff;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    .navbar-brand {
+        svg {
+            fill: $primaryColor;
+        }
+    }
+    .navbar-toggler {
+        svg path {
+            fill: $primaryColor;
+        }
+    }
+    .nav-link {
+        color: $primaryColor;
+        margin: 0 15px;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+    .icons__item {
+        svg {
+            fill: $primaryColor;
+        }
+        a:hover {
+            svg {
+                fill: $primaryColor;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 9;
+    .order-btn:hover {
+        color: $primaryColor;
+        border-color: $primaryColor;
+    }
+}
+.navbar-brand {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: #ffffff;
+    }
+}
+.nav-link {
+    color: #fff;
+    margin: 0 15px;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+.navbar-toggler {
+    svg path {
+        fill: #fff;
+    }
+}
+.icons__item {
+    svg {
+        fill: #fff;
+    }
+    a:hover {
+        svg {
+            fill: $primaryColor;
+        }
+    }
+}
+.logo {
+    width: 70px;
+    svg {
+        width: 100%;
+        fill: $primaryColor;
+    }
+}
+@media (max-width: 991px) {
+    .navbar {
+        background: #fff;
+        transition: 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px 20px;
+    }
+    .navbar-brand {
+        svg {
+            fill: $primaryColor;
+        }
+    }
+    .navbar-toggler {
+        svg path {
+            fill: $primaryColor;
+        }
+    }
+    .nav-link {
+        color: $primaryColor;
+        margin: 0 15px;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+    .icons__item {
+        svg {
+            fill: $primaryColor;
+        }
+        a:hover {
+            svg {
+                fill: $primaryColor;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .navbar-brand {
+        width: 60px;
+        height: 60px;
+    }
+}

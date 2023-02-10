@@ -1,0 +1,79 @@
+//about-us
+.about-us {
+    padding-top: 100px;
+    h2 {
+        text-align: center;
+        color: #212121;
+        font-size: 44px;
+        font-weight: bold;
+    }
+    h4 {
+        color: $tertiaryColor;
+        font-size: 34px;
+        font-weight: bold;
+        font-family: "PT Serif", serif;
+    }
+    .about-text {
+        padding: 0;
+        margin-top: 15px;
+    }
+}
+
+.problem__decision-section {
+    background: linear-gradient(to right, #d9e7ff 50%, #dff1e5 50%);
+    .secondary-block,
+    .tertiary-block {
+        padding: 80px 40px;
+    }
+    .secondary-block {
+        color: $secondaryColor;
+    }
+    .tertiary-block {
+        color: $tertiaryColor;
+    }
+}
+
+.choise-block {
+    background: url(../img/trietary-bg.png);
+    background-size: cover;
+    background-position: center;
+    font-family: "PT Serif", serif;
+    font-size: 28px;
+    color: #212121;
+    text-align: center;
+    padding: 70px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    .order-btn {
+        font-size: 18px;
+        color: #fff;
+        background-color: #ff6a00;
+        padding: 3px 40px;
+        margin-top: 30px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        svg {
+            width: 1em;
+            margin-left: 10px;
+        }
+        &:hover {
+            background-color: #d95a00;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .problem__decision-section {
+        background: linear-gradient(to bottom, #d9e7ff 50%, #dff1e5 50%);
+    }
+}
+@media (max-width: 575px) {
+    .about-us h4 {
+        font-size: 28px;
+    }
+    .choise-block {
+        padding: 50px 5px;
+        font-size: 20px;
+    }
+}

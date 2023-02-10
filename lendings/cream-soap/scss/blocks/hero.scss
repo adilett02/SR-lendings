@@ -1,0 +1,79 @@
+.hero {
+	position: relative;
+	padding: 200px 0;
+	color: #fff;
+	background: $secondaryColor;
+	font-family: "Playfair Display", serif;
+	&::after {
+		content: "";
+		background-image: url(../img/shape.png);
+		width: 100%;
+		height: 132px;
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		transform: rotate(180deg);
+	}
+	h1 {
+		font-size: 80px;
+		color: $primaryColor;
+		font-weight: bold;
+	}
+	h3 {
+		font-size: 40px;
+	}
+	p {
+		font-family: "Inter", sans-serif;
+	}
+}
+.order-btn {
+	display: inline-flex;
+	color: $secondaryColor;
+	background: #fff;
+	outline: none;
+	line-height: 40px;
+	padding: 10px 40px;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 50px;
+	border: none;
+	font-family: "Inter", sans-serif;
+	span {
+		margin-left: 10px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: $secondaryColor;
+		}
+	}
+	&:hover {
+		background: $primaryColor;
+		color: $secondaryColor;
+	}
+}
+@media (max-width: 991px) {
+	.hero {
+		padding-top: 150px;
+	}
+}
+@media (max-width: 576px) {
+	.hero {
+		padding-bottom: 125px;
+		h3 {
+			font-size: 24px;
+		}
+		h1 {
+			font-size: 40px;
+		}
+	}
+	.order-btn {
+		padding: 5px 30px;
+	}
+}

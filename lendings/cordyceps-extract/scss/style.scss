@@ -1,0 +1,47 @@
+@import "utils/libs.scss";
+@import "utils/vars.scss";
+@import "utils/fonts.scss";
+body {
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    font-family: "Open Sans", sans-serif;
+    color: #757575;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+li {
+    list-style: none;
+}
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 1540px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1480px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@import "../scss/blocks/header.scss";
+@import "../scss/blocks/hero.scss";
+@import "../scss/blocks/about-product.scss";
+@import "../scss/blocks/testimonials.scss";
+@import "../scss/blocks/about-us.scss";
+@import "../scss/blocks/form.scss";
+@import "../scss/blocks/footer.scss";
+@import "../scss/utils/media.scss";

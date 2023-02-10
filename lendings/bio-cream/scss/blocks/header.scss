@@ -1,0 +1,222 @@
+.nav-sticky.header {
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    position: fixed;
+    background-color: $secondaryColor;
+}
+header {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    transition: 0.3s;
+}
+.logo {
+    width: 80px;
+    margin-left: 80px;
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $primaryColor;
+    }
+}
+nav {
+    display: flex;
+    align-items: center;
+    a {
+        padding: 0 30px;
+        color: #000;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+    .order-btn {
+        background: transparent;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        &:hover {
+            background-color: $primaryColor;
+            color: $secondaryColor;
+        }
+    }
+}
+
+.menu-bar {
+    margin: 0 50px;
+    position: relative;
+    width: 28px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 99;
+    float: right;
+    transition: all 3.3s;
+    &::before,
+    &::after {
+        content: "";
+        transition: all 0.3s;
+    }
+    span,
+    &::before,
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: block;
+        background: $primaryColor;
+        border-radius: 2px;
+        position: absolute;
+        opacity: 1;
+    }
+    &::before {
+        top: 4px;
+    }
+    &::after {
+        top: 22px;
+    }
+    span {
+        top: 13px;
+    }
+    //hover
+    &:hover::before {
+        top: 5px;
+    }
+    &:hover::after {
+        top: 21px;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 90;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+.close-menu {
+    position: absolute;
+    top: 41px;
+    left: 28px;
+    width: 30px;
+    height: 30px;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-hidden {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3D;
+    div {
+        width: 100%;
+        height: 2px;
+        background: $secondaryColor;
+        top: 8px;
+        transition: all 200ms ease;
+        &:last-of-type {
+            transform: rotate(90deg) translateX(-2px);
+            transform-origin: center;
+        }
+    }
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: $primaryColor;
+    z-index: 99;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    transition: all 0.4s;
+    .menu {
+        margin-top: 50px;
+        flex-direction: column;
+        a {
+            width: 100%;
+            padding: 10px 0;
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+    .order-btn {
+        margin-top: 20px;
+        background-color: $secondaryColor;
+        color: #fff;
+        &:hover {
+            border: 1px solid $secondaryColor;
+            background-color: $primaryColor;
+            color: $secondaryColor;
+        }
+    }
+    .social__list {
+        display: flex;
+        margin-top: 30px;
+        &-item {
+            margin-right: 10px;
+            a {
+                display: flex;
+                width: 50px;
+                height: 50px;
+                background-color: $secondaryColor;
+                padding: 12px;
+                transition: all 0.5s;
+                border-radius: 0;
+                &:hover {
+                    background-color: #fff;
+                    border: 1px solid $secondaryColor;
+                    svg {
+                        fill: $secondaryColor;
+                    }
+                }
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+                fill: #fff;
+            }
+        }
+    }
+}
+.mobile-menu.active {
+    right: 0;
+}
+@media (max-width: 991px) {
+    .logo {
+        margin-left: 0;
+    }
+}
+@media (max-width: 767px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width: 576px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    .menu-bar {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .mobile-menu .social__list-item a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+}

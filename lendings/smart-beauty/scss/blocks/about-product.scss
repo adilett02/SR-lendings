@@ -1,0 +1,210 @@
+.about-product {
+    padding-top: 100px;
+    h2 {
+        text-align: center;
+        color: $secondaryColor;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 32px;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+    h5 {
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+.peptides {
+    padding: 100px 0;
+    background-color: $secondaryColor;
+}
+.peptides-text {
+    color: #fff;
+    padding: 25px;
+}
+
+.useful__list {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        margin-left: -1px;
+        background-color: $secondaryColor;
+    }
+    .useful__item {
+        position: relative;
+        width: 50%;
+        text-align: center;
+        margin: 20px 0;
+        &-text {
+            padding: 30px;
+            background-color: $primaryColor;
+            border-radius: 10px;
+            color: #fff;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 10%;
+            right: 11px;
+            z-index: 1;
+            border: 10px solid;
+            border-color: transparent transparent transparent $primaryColor;
+        }
+        &.right {
+            position: relative;
+        }
+        &.right::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 10%;
+            z-index: 1;
+            border: 10px solid;
+            left: 11px;
+            right: auto;
+            border-color: transparent $primaryColor transparent transparent;
+        }
+    }
+    .useful__item.left {
+        margin-right: auto;
+        padding-right: 30px;
+    }
+    .useful__item.right {
+        margin-left: auto;
+        padding-left: 30px;
+    }
+}
+// .info-text {
+//     margin-bottom: 100px;
+// }
+
+.careful {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.danger-img {
+    margin-right: 20px;
+    img {
+        width: 40px;
+    }
+}
+.recommendation-section {
+    h4 {
+        margin-bottom: 40px;
+    }
+    padding: 100px 0;
+    background-color: #8bb7df;
+    color: #fff;
+    .beauty-text {
+        color: $primaryColor;
+        font-weight: bold;
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 40px;
+        font-style: italic;
+    }
+    h5 {
+        font-size: 24px;
+        font-style: italic;
+        color: $secondaryColor;
+    }
+}
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: #8bb7df;
+    background-position: center;
+    padding-top: 120px;
+    h4 {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .order-btn {
+        background: $secondaryColor;
+        color: #fff;
+    }
+    .buy-text {
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.structure {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    img {
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+.usefull__item {
+    margin: 20px;
+}
+.banner {
+    padding: 50px 0;
+    background-color: $primaryColor;
+    text-align: center;
+    color: #fff;
+    p {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .buy-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    .arabica-block {
+        padding: 100px 0;
+    }
+    .about-product {
+        padding-top: 80px;
+        h2 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+    }
+    .banner p {
+        padding: 0;
+    }
+
+    .useful__list .useful__item {
+        width: 100%;
+        padding-left: 30px;
+    }
+    .useful__list .useful__item.left {
+        margin: 0;
+        padding-right: 0;
+    }
+    .useful__list .useful__item::before {
+        left: 11px;
+        border-color: transparent $primaryColor transparent transparent;
+    }
+    .useful__list::before {
+        left: 0;
+    }
+    .about-product .done-img {
+        width: 25px;
+    }
+}

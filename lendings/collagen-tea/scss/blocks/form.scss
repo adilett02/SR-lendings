@@ -1,0 +1,35 @@
+.form {
+    padding: 100px 0;
+    button {
+        border: none;
+    }
+    textarea {
+        resize: none;
+    }
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+    .form-control {
+        border: none;
+        border-bottom: 2px solid $primaryColor;
+        padding: 10px 20px;
+        color: #000;
+        border-radius: 0;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: 2px solid $primaryColor;
+        }
+    }
+    .focus-border {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        transform: translateX(-50%);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}

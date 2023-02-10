@@ -1,0 +1,146 @@
+.about-product {
+    padding-top: 100px;
+    h4 {
+        font-size: 36px;
+        color: $primaryColor;
+        font-weight: bold;
+        font-family: "PT Serif", serif;
+    }
+    h5 {
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+h2 {
+    text-align: center;
+    color: $secondaryColor;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "PT Serif", serif;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.about-text {
+    padding: 40px;
+    span {
+        color: $secondaryColor;
+        font-weight: bold;
+    }
+}
+
+.useful-item {
+    padding: 10px;
+    &:nth-child(3n + 1) {
+        p {
+            background-color: #ffe9d9;
+            color: $primaryColor;
+        }
+    }
+    &:nth-child(3n + 2) {
+        p {
+            background-color: #d9e7ff;
+            color: $secondaryColor;
+        }
+    }
+    &:nth-child(3n + 3) {
+        p {
+            background-color: #dff1e5;
+            color: $tertiaryColor;
+        }
+    }
+    p {
+        padding: 40px;
+        height: 100%;
+    }
+}
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: #ffe9d9;
+    background-position: center;
+    padding-top: 120px;
+    h4 {
+        color: $primaryColor;
+        margin-bottom: 20px;
+    }
+    .order-btn {
+        background: $primaryColor;
+        color: #fff;
+        &:hover {
+            background-color: #d95a00;
+        }
+    }
+    .buy-text {
+        color: $tertiaryColor;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+        font-family: "PT Serif", serif;
+    }
+}
+
+.banner {
+    font-family: "PT Serif";
+    font-size: 24px;
+    color: #ff6a00;
+    text-align: center;
+    padding: 120px 0;
+    p {
+        padding: 0 40px;
+    }
+}
+
+.primary-bg {
+    background-color: #d9e7ff;
+    strong {
+        color: $secondaryColor;
+        font-size: 28px;
+        font-family: "PT Serif", serif;
+    }
+}
+.secondary-bg {
+    background-color: #dff1e5;
+    strong {
+        color: $tertiaryColor;
+        font-size: 28px;
+    }
+}
+.tertiary-bg {
+    background-color: #ffe9d9;
+    strong {
+        color: $primaryColor;
+        font-size: 28px;
+        font-family: "PT Serif", serif;
+        white-space: nowrap;
+    }
+}
+.rounded-3 {
+    border-radius: 1.25rem !important;
+}
+
+@media (max-width: 991px) {
+    .buy-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .about-product {
+        padding-top: 80px;
+        h2 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+    }
+    .banner {
+        padding: 60px 0;
+        font-size: 20px;
+    }
+    .banner p {
+        padding: 0;
+    }
+    .about-text {
+        padding: 10px;
+    }
+}

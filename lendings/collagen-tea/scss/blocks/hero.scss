@@ -1,0 +1,141 @@
+.hero {
+	display: flex;
+	align-items: center;
+	padding: 100px 100px 0px;
+	position: relative;
+	min-height: 100vh;
+}
+.circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $primaryColor;
+	clip-path: circle(800px at right 1000px);
+}
+.hero-img {
+	width: 100%;
+}
+h1 {
+	font-size: 72px;
+	color: $primaryColor;
+	font-weight: 900;
+	line-height: 1;
+}
+h3 {
+	font-size: 48px;
+	font-weight: 700;
+	font-style: italic;
+	font-weight: 400;
+}
+h6 {
+	font-size: 24px;
+	font-style: italic;
+	span {
+		color: $primaryColor;
+		font-weight: bold;
+	}
+}
+.order-btn {
+	padding: 15px 45px;
+	background-color: $primaryColor;
+	color: #fff;
+	display: flex;
+	border-radius: 50px;
+	display: inline-block;
+	font-weight: 700;
+	transition: all 0.3s;
+	&:hover {
+		color: #fff;
+		box-shadow: 0px 0px 10px 0px #56a3cf;
+	}
+}
+
+.social-icons {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	li {
+		padding: 20px 0;
+	}
+	a {
+		width: 25px;
+		height: 25px;
+		display: block;
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.hero {
+		min-height: auto;
+		h1 {
+			margin-top: 40px;
+		}
+	}
+	.circle {
+		clip-path: circle(600px at center bottom);
+	}
+	.social-icons {
+		background-color: $primaryColor;
+		padding: 0 10px;
+		right: 0;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		padding-bottom: 10px;
+		li {
+			padding: 15px 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 54px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h6{
+        font-size: 18px;
+    }
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+}
+
+
+@media (max-width: 400px) {
+    h1{
+        font-size: 42px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 16px;
+    }
+    .order-btn{
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+    .social-icons a{
+        width: 20px;
+        height: 20px;
+    }
+    .circle {
+        clip-path: circle(300px at center bottom);
+    }
+}

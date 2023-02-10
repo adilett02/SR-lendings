@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min";
+.block {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
+    .block-img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .block-text {
+        padding: 10px;
+    }
+}

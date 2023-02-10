@@ -1,0 +1,126 @@
+h2 {
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 60px;
+    &::after {
+        right: 0;
+        margin: 0px auto;
+        content: "";
+        border: 2px solid #fff;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+}
+h4 {
+    font-size: 36px;
+    color: $primaryColor;
+    position: relative;
+    margin-bottom: 60px;
+    &::after {
+        content: "";
+        border: 2px solid #fff;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+}
+h5 {
+    color: $primaryColor;
+    font-weight: bold;
+}
+
+.useful-item {
+    padding: 40px;
+    border-left: 1px solid #d9e8f4;
+    border-bottom: 1px solid #d9e8f4;
+    margin: -1px;
+}
+.created-for {
+    background-color: $primaryColor;
+    padding: 50px;
+    color: $secondaryColor;
+    li {
+        margin-top: 5px;
+        list-style: inside;
+    }
+    h5 {
+        color: $secondaryColor;
+    }
+}
+.usage {
+    width: 100%;
+    padding: 20px 40px;
+    // border-left: none;
+}
+.advantage {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 50px;
+        margin-right: 10px;
+    }
+}
+// .recommendation-section {
+//     h4 {
+//         margin-bottom: 40px;
+//     }
+//     padding: 100px 0;
+//     background-color: #8bb7df;
+//     color: #fff;
+//     .beauty-text {
+//         color: $primaryColor;
+//         font-weight: bold;
+//         font-family: "Playfair Display", serif;
+//         font-size: 24px;
+//         text-align: center;
+//         margin-top: 40px;
+//         font-style: italic;
+//     }
+//     h5 {
+//         font-size: 24px;
+//         font-style: italic;
+//         color: $secondaryColor;
+//     }
+// }
+// .buy-section {
+//     background-image: url(../img/buy-bg.png);
+//     background-color: $primaryColor;
+//     background-position: center;
+//     padding-top: 120px;
+//     h4 {
+//         color: $secondaryColor;
+//         margin-bottom: 40px;
+//     }
+//     .order-btn {
+//         background: $secondaryColor;
+//         color: #fff;
+//         &:hover {
+//             background: #fff;
+//             color: $secondaryColor;
+//         }
+//     }
+// }
+
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    h4 {
+        font-size: 32px;
+    }
+    .created-for {
+        padding: 30px 20px;
+    }
+    .order-btn {
+        padding: 2px 30px;
+    }
+    .usage {
+        padding: 20px 15px;
+    }
+}

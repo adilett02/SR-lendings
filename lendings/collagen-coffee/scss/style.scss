@@ -1,0 +1,37 @@
+@import "utils/libs.scss";
+@import "utils/vars.scss";
+@import "utils/fonts.scss";
+body {
+    font-size: 18px;
+    font-family: 'Lato';
+    color: $secondaryColor;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+li {
+    list-style: none;
+}
+ul{
+    padding: 0
+}
+
+@media (max-width: 576px){
+    body{
+        font-size: 16px;
+    }
+}
+
+
+
+@import "../scss/blocks/header.scss";
+@import "../scss/blocks/hero.scss";
+@import "../scss/blocks/about-product.scss";
+@import "../scss/blocks/testimonials.scss";
+@import "../scss/blocks/about-us.scss";
+@import "../scss/blocks/form.scss";
+@import "../scss/blocks/footer.scss";
+@import "../scss/utils/media.scss";
